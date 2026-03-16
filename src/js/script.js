@@ -1,4 +1,7 @@
-
+fetch('/Users/web5/github-classroom/Academy-of-Innovative-Technology/05-01-fetch-intro-emmag4577/src/data/api.json')
+ .then(response => console.log(response))
+ .catch(error => console.error(error));
+ 
 
 function getUserData() {
 
