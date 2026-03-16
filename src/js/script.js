@@ -1,5 +1,6 @@
 fetch('/Users/web5/github-classroom/Academy-of-Innovative-Technology/05-01-fetch-intro-emmag4577/src/data/api.json')
- .then(response => console.log(response))
+ .then(response => response.json())
+ .then(data => console.log(data))
  .catch(error => console.error(error));
  
 
