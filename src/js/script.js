@@ -6,7 +6,6 @@ fetch('src/data/api.json')
   }
    return response.json
 })
- .then(data=> console.log(data))
 
 function getUserData() {
 
