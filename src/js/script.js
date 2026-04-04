@@ -12,6 +12,7 @@ function getUserData() {
       return response.json();
     })
     .then(data => {
+      console.log(data);
       const user = JSON.parse(JSON.stringify(data));
       updateUserCard(user);
     })
