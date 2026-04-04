@@ -1,3 +1,9 @@
+window.onload = function () {
+  getUserData();
+
+  document.querySelector('#next-button').addEventListener('click', getUserData);
+};
+
 function getUserData() {
   fetch('src/data/api.json')
     .then(response => {
@@ -22,7 +28,3 @@ function updateUserCard(user) {
       document.querySelector('#student-image').src = response.url;
     });
 }
-
-document.querySelector('#next-button').addEventListener('click', getUserData);
-
-window.onload = getUserData;
