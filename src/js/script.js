@@ -1,6 +1,12 @@
+let students = [];
+let currentIndex = 0;
+
 window.onload = function () {
   getUserData();
-  document.querySelector('#next-button').addEventListener('click', getUserData);
+  document.querySelector('#next-button').addEventListener('click', function () {
+    currentIndex = (currentIndex + 1) % students.length;
+    updateUserCard(students[currentIndex]);
+  });
 };
 
 function getUserData() {
@@ -12,9 +18,8 @@ function getUserData() {
       return response.json();
     })
     .then(data => {
-      console.log(data);
-      const user = JSON.parse(JSON.stringify(data));
-      updateUserCard(user);
+      students = JSON.parse(JSON.stringify(data.results));
+      updateUserCard(students[currentIndex]);
     })
     .catch(error => console.error(error));
 }
