@@ -38,7 +38,7 @@ document.querySelector('body').innerHTML = `
     .then(response => {
       document.querySelector('#student-image').src = response.url;
     });
-
+    
 };
 
 
