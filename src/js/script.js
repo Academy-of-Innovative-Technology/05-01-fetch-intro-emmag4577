@@ -19,7 +19,7 @@ function getUserData() {
 }
 
 function updateUserCard(user) {
-  document.querySelector('#student-name').textContent = user.name;
+  document.querySelector('#student-name').textContent = user.firstName + " " + user.lastName;
   document.querySelector('#student-email').textContent = user.email;
 
   fetch('https://picsum.photos/400/300')
