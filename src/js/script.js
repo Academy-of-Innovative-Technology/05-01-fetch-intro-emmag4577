@@ -1,4 +1,3 @@
-
 function getUserData() {
   fetch('src/data/api.json')
     .then(response => {
@@ -14,7 +13,6 @@ function getUserData() {
     .catch(error => console.error(error));
 }
 
-
 function updateUserCard(user) {
   document.querySelector('#user-name').textContent = user.name;
   document.querySelector('#user-email').textContent = user.email;
@@ -24,10 +22,7 @@ function updateUserCard(user) {
       document.querySelector('#student-image').src = response.url;
     });
 }
+
 document.querySelector('#next-button').addEventListener('click', getUserData);
 
-
 window.onload = getUserData;
-
-
-
