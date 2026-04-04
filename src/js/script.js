@@ -1,6 +1,5 @@
 window.onload = function () {
   getUserData();
-
   document.querySelector('#next-button').addEventListener('click', getUserData);
 };
 
@@ -20,8 +19,8 @@ function getUserData() {
 }
 
 function updateUserCard(user) {
-  document.querySelector('#user-name').textContent = user.name;
-  document.querySelector('#user-email').textContent = user.email;
+  document.querySelector('#student-name').textContent = user.name;
+  document.querySelector('#student-email').textContent = user.email;
 
   fetch('https://picsum.photos/400/300')
     .then(response => {

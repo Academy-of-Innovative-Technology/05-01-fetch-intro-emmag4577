@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random User Fetch</title>
-    <link rel="stylesheet" href="src/lib/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random User Fetch</title>
+  <link rel="stylesheet" href="src/lib/bootstrap.min.css">
 </head>
 <body>
-
-<div class="container mt-5">
+  <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <!-- User Card will go here -->
-            <div class="card">
-                <div class="card-body">
-                    <h5 id="user-name" class="card-title"></h5>
-                    <p id="user-email" class="card-text"></p>
-                </div>
-            </div>
-            <!-- "Next" Button -->
-            <button id="next-button" class="btn btn-primary mt-3">Next User</button>
+      <div class="col-md-6">
+        <div class="card">
+          <img id="student-image" class="card-img-top" alt="Student Image">
+          <div class="card-body">
+            <h5 id="student-name" class="card-title"></h5>
+            <p id="student-email" class="card-text"></p>
+          </div>
         </div>
+        <button id="next-button" class="btn btn-primary mt-3">Next User</button>
+      </div>
     </div>
-</div>
-
-<script src="src/lib/bootstrap.bundle.min.js"></script>
-<script src="src/js/script.js"></script>
-
+  </div>
+  <script src="src/lib/bootstrap.bundle.min.js"></script>
+  <script src="src/js/script.js"></script>
 </body>
 </html>
